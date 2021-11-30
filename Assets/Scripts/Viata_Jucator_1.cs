@@ -21,7 +21,7 @@ public class Viata_Jucator_1 : MonoBehaviour
     {
         if (viataActuala <= 0)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
         if (Input.GetKeyDown(KeyCode.Z))
         {
