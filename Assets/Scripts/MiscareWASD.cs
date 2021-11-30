@@ -9,6 +9,9 @@ public class MiscareWASD : MonoBehaviour
     float movementY;
     public Animator animator;
 
+    public float horizontalValue;
+    public bool facingRight;
+
     Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
@@ -73,5 +76,22 @@ public class MiscareWASD : MonoBehaviour
             animator.SetBool("mers", false);
         }
 
+       Move();
+
+       Flip();
+    }
+    
+    void Move()
+    {
+        horizontalValue = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+    }
+
+    void Flip()
+    {
+        if((horizontalValue < 0 && facingRight) || (horizontalValue > 0 && !facingRight))
+        {
+            facingRight = !facingRight;
+            transform.Rotate(new Vector3(0, 180, 0));
+        }
     }
 }
