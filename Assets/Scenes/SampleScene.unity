@@ -2219,6 +2219,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 100
   animator: {fileID: 1525266508}
+  horizontalValue: 0
+  facingRight: 1
 --- !u!50 &1525266504
 Rigidbody2D:
   serializedVersion: 4
