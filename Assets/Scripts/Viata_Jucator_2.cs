@@ -22,7 +22,7 @@ public class Viata_Jucator_2: MonoBehaviour
     {  
         if(viataActuala==0)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
         if(Input.GetKeyDown(KeyCode.Space))
         {
