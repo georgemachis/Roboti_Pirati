@@ -541,5 +541,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   viataActuala: 0
-  maxHp: 1000
+  maxHp: 100
   healthBar: {fileID: 1711512472044714102}
