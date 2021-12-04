@@ -25,17 +25,20 @@ public class Attack_Melee : MonoBehaviour
                     
                 }
                 animator.SetBool("attack", true);
+
             }
+            
             //ataci
             timp_intre_atacuri = start_Timp_intre_atacuri;
         }
         else
         {
             timp_intre_atacuri -= Time.deltaTime;
+            
         }
         if(Input.GetKeyUp(KeyCode.Space))
         {
-            animator.SetBool("attack", false);
+              animator.SetBool("attack", false);
         }
         
     }
@@ -44,4 +47,5 @@ public class Attack_Melee : MonoBehaviour
             Gizmos.color = Color.red;
             Gizmos.DrawSphere(attack_pozitie.position, attack_Range);
         }
+        
 }
