@@ -4,19 +4,16 @@ using UnityEngine;
 
 public class EnemyCrabMelee : MonoBehaviour
 {
-    [SerializeField] public GameObject target;
+    [SerializeField] public Transform target;
     [SerializeField] public float speed = 2.0f;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] public float stoppingDistance = 1.4f;
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
-        transform.up = target.transform.position - transform.position;
+        if(Vector2.Distance(transform.position, target.position) > stoppingDistance)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        }
     }
 }
