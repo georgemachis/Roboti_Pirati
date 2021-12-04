@@ -416,7 +416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   distanta_de_oprire: 5
-  retreatDistance: 5
+  retreatDistance: 0
   start_timp_intre_lovituri: 2
   proiectile: {fileID: 6326194614800668210, guid: f399abf15f727f14198348815ffc52d7, type: 3}
   jucator1: {fileID: 0}
@@ -460,7 +460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   viataActuala: 0
-  maxHp: 1000
+  maxHp: 100
   healthBar: {fileID: 6588064489933112722}
 --- !u!1 &6134439219483608584
 GameObject:
