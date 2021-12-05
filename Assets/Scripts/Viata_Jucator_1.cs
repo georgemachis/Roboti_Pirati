@@ -10,7 +10,7 @@ public class Viata_Jucator_1 : MonoBehaviour
     public static int viataActuala = 0;
     public int maxHp = 100;
     public Slider healthBar;
-    private void Start()
+    public void Start()
     {
         viataActuala = maxHp;
         healthBar.value = viataActuala;

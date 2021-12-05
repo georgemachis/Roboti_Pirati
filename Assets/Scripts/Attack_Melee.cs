@@ -43,9 +43,9 @@ public class Attack_Melee : MonoBehaviour
         
     }
     void OnDrawGizmosSelected()
-        {
+    {
             Gizmos.color = Color.red;
             Gizmos.DrawSphere(attack_pozitie.position, attack_Range);
-        }
-        
+    }
+
 }

@@ -170,26 +170,11 @@ MonoBehaviour:
   stopSpawn: 0
   spawnTime: 5
   spawnDelay: 10
---- !u!1 &154127288 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7577714049647651177, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+--- !u!4 &154127295 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4717677759527003139, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
   m_PrefabInstance: {fileID: 3606625157593296299}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &154127289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 154127288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4708e26774e1fd4ebb8759287ad8afd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  viataActuala: 0
-  maxHp: 100
-  healthBar: {fileID: 0}
 --- !u!1 &195144219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,7 +1143,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1190419141}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Attack
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
@@ -1173,7 +1158,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190419140}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7, y: -0.4, z: 0}
+  m_LocalPosition: {x: 0.33, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1525266502}
@@ -1743,7 +1728,7 @@ GameObject:
   - component: {fileID: 1525266504}
   - component: {fileID: 1525266507}
   - component: {fileID: 1525266508}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player1
   m_TagString: Player1
   m_Icon: {fileID: 0}
@@ -1865,7 +1850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14772586ee5bd8d41bbe7db6d2bda5a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 1000
+  maxHp: 100
   healthBar: {fileID: 1345831783}
 --- !u!61 &1525266506
 BoxCollider2D:
@@ -1905,7 +1890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c631b77145ac74d83bdd2cd71bedf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  start_Timp_intre_atacuri: 0.5
+  start_Timp_intre_atacuri: 1
   attack_pozitie: {fileID: 1190419141}
   attack_Range: 1.94
   what_is_enemies:
@@ -2086,6 +2071,36 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &1749534996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1749534997}
+  m_Layer: 0
+  m_Name: crabAttack
+  m_TagString: Untagged
+  m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1749534997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749534996}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 154127295}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1893584670
 GameObject:
   m_ObjectHideFlags: 0
@@ -2266,10 +2281,90 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8731565744937927713, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -2447980795688251660, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2447980795688251660, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: m_EdgeRadius
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229119956723464336, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: timer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229119956723464336, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3229119956723464336, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1525266502}
+    - target: {fileID: 3229119956723464336, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: rayCast
+      value: 
+      objectReference: {fileID: 1525266502}
+    - target: {fileID: 3229119956723464336, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: moveSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229119956723464336, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: attackRange
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229119956723464336, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: rayCastLenght
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229119956723464336, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: attackDistance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229119956723464336, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: attackPosition
+      value: 
+      objectReference: {fileID: 1749534997}
+    - target: {fileID: 3229119956723464336, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: rangeOfAttack.x
+      value: 9.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229119956723464336, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: rangeOfAttack.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229119956723464336, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: rangeOfAttack.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229119956723464336, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: PossitionOfAttack
+      value: 
+      objectReference: {fileID: 1749534997}
+    - target: {fileID: 3229119956723464336, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: raycastMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229119956723464336, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229119956723464336, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: PlayerToTarget.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229119956723464336, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: TargetToPlayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229119956723464336, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
+      propertyPath: startTimeBetweenAttacks
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4717677759527003139, guid: 3d959bd1341c8044c94d9c259d751f32, type: 3}
       propertyPath: m_RootOrder
       value: 7
