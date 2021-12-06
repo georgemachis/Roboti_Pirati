@@ -39,7 +39,7 @@ public class Drop_Bucati_Lemn : MonoBehaviour
         }
 
         score.text = "Bucati lemn " + bucati_lemn;
-        if(bucati_lemn==5)
+        if(bucati_lemn==3)
         {
             SceneManager.LoadScene(2);
         }
