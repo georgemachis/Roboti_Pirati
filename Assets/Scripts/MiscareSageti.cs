@@ -7,10 +7,15 @@ public class MiscareSageti : MonoBehaviour
     public float speed;
     float movementX;
     float movementY;
+    public Animator animator;
+
 
     public Camera cam;
     Vector2 mousePos;
     Rigidbody2D rb;
+
+    public float horizontalValue;
+    public bool facingRight;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,18 +33,22 @@ public class MiscareSageti : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.UpArrow))
         {
             movementY=10;
+            animator.SetBool("Mers", true);
         }
         if(Input.GetKeyDown(KeyCode.DownArrow))
         {
             movementY=-10;
+            animator.SetBool("Mers", true);
         }
         if(Input.GetKeyDown(KeyCode.RightArrow))
         {
             movementX=10;
+            animator.SetBool("Mers", true);
         }
         if(Input.GetKeyDown(KeyCode.LeftArrow))
         {
             movementX=-10;
+            animator.SetBool("Mers", true);
         }
         if(Input.GetKeyUp(KeyCode.UpArrow)||Input.GetKeyUp(KeyCode.DownArrow))
         {
@@ -50,6 +59,43 @@ public class MiscareSageti : MonoBehaviour
             movementX=0;
         }
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+
+        if (Input.GetKeyUp(KeyCode.UpArrow))
+        {
+
+            animator.SetBool("Mers", false);
+        }
+        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+
+            animator.SetBool("Mers", false);
+        }
+        if (Input.GetKeyUp(KeyCode.RightArrow))
+        {
+
+            animator.SetBool("Mers", false);
+        }
+        if (Input.GetKeyUp(KeyCode.DownArrow))
+        {
+
+            animator.SetBool("Mers", false);
+        }
+        //Move();
+
+       // Flip();
+    }
+    void Move()
+    {
+        horizontalValue = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+    }
+
+    void Flip()
+    {
+        if ((horizontalValue < 0 && facingRight) || (horizontalValue > 0 && !facingRight))
+        {
+            facingRight = !facingRight;
+            transform.Rotate(new Vector3(0, 180, 0));
+        }
     }
     private void FixedUpdate()
     {
