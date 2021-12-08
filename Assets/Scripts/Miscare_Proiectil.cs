@@ -26,7 +26,6 @@ public class Miscare_Proiectil : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Enemy_Life.player2Thread * 2 < Enemy_Life.player1Thread) { 
         transform.position = Vector2.MoveTowards(transform.position, target1, speed * Time.deltaTime);
         if (transform.position.x == target1.x && transform.position.y == target1.y)
         {
