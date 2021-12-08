@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 9bee2e4e95598ed43947c330d39127fe
+guid: bfec3d117eab88840bc29c4fab8f01e1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7406555952653746152
-    second: Caracter_0
-  - first:
-      213: -7470613455797647853
-    second: Caracter_1
-  - first:
-      213: 4601803545545931121
-    second: Caracter_2
+      213: -6845929266962131826
+    second: brat_pusca_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,64 +94,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Caracter_0
+      name: brat_pusca_0
       rect:
         serializedVersion: 2
-        x: 76
-        y: 113
-        width: 30
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 14
+        y: 3
+        width: 6
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.98851776}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ef3bf6b56f59c660800000000000000
-      internalID: 7406555952653746152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Caracter_1
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 113
-        width: 30
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3168de894ac035890800000000000000
-      internalID: -7470613455797647853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Caracter_2
-      rect:
-        serializedVersion: 2
-        x: 436
-        y: 113
-        width: 30
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 179f56a71f3ecdf30800000000000000
-      internalID: 4601803545545931121
+      spriteID: e84954d5a9f5ef0a0800000000000000
+      internalID: -6845929266962131826
       vertices: []
       indices: 
       edges: []

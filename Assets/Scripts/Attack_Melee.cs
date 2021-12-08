@@ -22,8 +22,11 @@ public class Attack_Melee : MonoBehaviour
                 for(int i=0;i<enemiesToDamage.Length;i++)
                 {
                     enemiesToDamage[i].GetComponent<Viata_Inamici>().DamagePlayer(damage);
-                    
+                     Enemy_Life.player1Thread = Enemy_Life.player1Thread+5;
+
                 }
+               
+                    Debug.Log("P1 "+Enemy_Life.player1Thread);
                 animator.SetBool("attack", true);
 
             }

@@ -5,8 +5,8 @@ using UnityEngine;
 public class MiscareSageti : MonoBehaviour
 {
     public float speed;
-    float movementX;
-    float movementY;
+    public float movementX;
+    public float movementY;
     public Animator animator;
 
 
@@ -21,9 +21,7 @@ public class MiscareSageti : MonoBehaviour
     {
         rb=GetComponent<Rigidbody2D>();
         movementX=0;
-        movementY=0;
-
-        
+        movementY=0;    
     }
 
     // Update is called once per frame
@@ -97,10 +95,10 @@ public class MiscareSageti : MonoBehaviour
             transform.Rotate(new Vector3(0, 180, 0));
         }
     }
-    private void FixedUpdate()
+    /*private void FixedUpdate()
     {
         Vector2 lookDir = mousePos - rb.position;
         float angle = Mathf.Atan2(lookDir.y,lookDir.x)*Mathf.Rad2Deg-90f;
         rb.rotation = angle;
-    }
+    }*/
 }

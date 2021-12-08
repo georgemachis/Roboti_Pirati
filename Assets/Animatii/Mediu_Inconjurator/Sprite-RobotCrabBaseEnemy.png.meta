@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 9bee2e4e95598ed43947c330d39127fe
+guid: 5d61980b16f70c64d9748b60863a13a9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7406555952653746152
-    second: Caracter_0
+      213: 6650796465816963615
+    second: Sprite-RobotCrabBaseEnemy_0
   - first:
-      213: -7470613455797647853
-    second: Caracter_1
+      213: -4262842281442569167
+    second: Sprite-RobotCrabBaseEnemy_1
   - first:
-      213: 4601803545545931121
-    second: Caracter_2
+      213: 8973013281500891859
+    second: Sprite-RobotCrabBaseEnemy_2
+  - first:
+      213: -3243845883069206912
+    second: Sprite-RobotCrabBaseEnemy_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Caracter_0
+      name: Sprite-RobotCrabBaseEnemy_0
       rect:
         serializedVersion: 2
-        x: 76
-        y: 113
-        width: 30
-        height: 61
+        x: 0
+        y: 3
+        width: 63
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,20 +117,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ef3bf6b56f59c660800000000000000
-      internalID: 7406555952653746152
+      spriteID: f1a8172f5206c4c50800000000000000
+      internalID: 6650796465816963615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caracter_1
+      name: Sprite-RobotCrabBaseEnemy_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 113
-        width: 30
-        height: 61
+        x: 64
+        y: 3
+        width: 63
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3168de894ac035890800000000000000
-      internalID: -7470613455797647853
+      spriteID: 1349911d78757d4c0800000000000000
+      internalID: -4262842281442569167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caracter_2
+      name: Sprite-RobotCrabBaseEnemy_2
       rect:
         serializedVersion: 2
-        x: 436
-        y: 113
-        width: 30
-        height: 61
+        x: 128
+        y: 3
+        width: 63
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,8 +159,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 179f56a71f3ecdf30800000000000000
-      internalID: 4601803545545931121
+      spriteID: 3da09b8d90c868c70800000000000000
+      internalID: 8973013281500891859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-RobotCrabBaseEnemy_3
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 3
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08eeb812b5b8bf2d0800000000000000
+      internalID: -3243845883069206912
       vertices: []
       indices: 
       edges: []
