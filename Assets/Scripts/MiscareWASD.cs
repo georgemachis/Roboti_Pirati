@@ -27,22 +27,22 @@ public class MiscareWASD : MonoBehaviour
         rb.velocity=new Vector2(movementX*speed*Time.deltaTime,movementY*speed*Time.deltaTime);
         if(Input.GetKeyDown(KeyCode.W))
         {
-            movementY=10;
+            movementY = +10;
             animator.SetBool("mers", true);
         }
         if(Input.GetKeyDown(KeyCode.S))
         {
-            movementY=-10;
+            movementY= -10;
             animator.SetBool("mers", true);
         }
         if(Input.GetKeyDown(KeyCode.D))
         {
-            movementX=10;
+            movementX= +10;
             animator.SetBool("mers", true);
         }
         if(Input.GetKeyDown(KeyCode.A))
         {
-            movementX=-10;
+            movementX= -10;
             animator.SetBool("mers", true);
         }
         if(Input.GetKeyUp(KeyCode.W)||Input.GetKeyUp(KeyCode.S))
