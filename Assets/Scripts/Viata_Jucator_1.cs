@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class Viata_Jucator_1 : MonoBehaviour
 {
     public static int viataActuala = 0;
-    public int maxHp = 100;
+    public static int maxHp = 100;
     public Slider healthBar;
     private void Start()
     {
@@ -21,12 +21,13 @@ public class Viata_Jucator_1 : MonoBehaviour
     {
         if (viataActuala <= 0)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
         if (Input.GetKeyDown(KeyCode.Z))
         {
             DamagePlayer(10);
         }
+        healthBar.value = viataActuala;
     }
 
     public void DamagePlayer(int v)

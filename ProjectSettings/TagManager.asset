@@ -8,6 +8,9 @@ TagManager:
   - Player1
   - Player2
   - Enemy
+  - Tentacula
+  - ZidNezid
+  - BOSS
   layers:
   - Default
   - TransparentFX
@@ -15,9 +18,9 @@ TagManager:
   - Enemy
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Zid
+  - Glont
   - 
   - 
   - 

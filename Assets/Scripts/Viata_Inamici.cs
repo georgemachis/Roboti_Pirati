@@ -9,6 +9,7 @@ public class Viata_Inamici : MonoBehaviour
     public int viataActuala = 0;
     public int maxHp = 100;
     public Slider healthBar;
+    public static int nrTentacule=0;
     private void Start()
     {
         viataActuala = maxHp;
@@ -21,13 +22,24 @@ public class Viata_Inamici : MonoBehaviour
         if (viataActuala <= 0)
         {
             Drop_Bucati_Lemn.scorevalue += 10;
+            
+            if(gameObject.CompareTag("Tentacula"))
+            {
+                nrTentacule++;
+                Destroy(gameObject);
+            }
             Destroy(gameObject);
+            if(viataActuala<=0 && gameObject.name.Equals("Boss"))
+            {
+                SceneManager.LoadScene(5);
+            }
 
         }
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (gameObject.name.Equals("Boss") && nrTentacule!=4)
         {
-            DamagePlayer(10);
+            viataActuala = maxHp;
         }
+
     }
 
     public void DamagePlayer(int v)

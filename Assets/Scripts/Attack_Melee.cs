@@ -23,6 +23,7 @@ public class Attack_Melee : MonoBehaviour
                 {
                     enemiesToDamage[i].GetComponent<Viata_Inamici>().DamagePlayer(damage);
                      Enemy_Life.player1Thread = Enemy_Life.player1Thread+5;
+                     Enemy_Life_Melle.player1Thread = Enemy_Life_Melle.player1Thread + 5;
 
                 }
                

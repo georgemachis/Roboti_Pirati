@@ -41,7 +41,7 @@ public class Miscare_Proiectil : MonoBehaviour
                 DestroyProiectil();
             }
         }
-  
+ 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

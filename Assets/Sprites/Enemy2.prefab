@@ -379,7 +379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   viataActuala: 0
-  maxHp: 100
+  maxHp: 1
   healthBar: {fileID: 6588064489933112722}
 --- !u!95 &-1488638605021676009
 Animator:

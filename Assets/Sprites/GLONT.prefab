@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -3029508994769784703}
   - component: {fileID: 783254068480940586}
   - component: {fileID: 7579493584356909918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GLONT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 9218608503640828402, guid: b8b7ca1380df494419b211552e74c834, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
-  m_FlipY: 0
+  m_FlipX: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 1, y: 1.375}
   m_AdaptiveModeThreshold: 0.5
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc54ced34ef2d34e8dba4af09a99bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 40
   gm: {fileID: 1709102784084431083, guid: 406fd3018054d984685f1051d61f2f7c, type: 3}
 --- !u!58 &783254068480940586
 CircleCollider2D:
